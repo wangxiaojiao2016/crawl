@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电影风云榜</title>
+    <link rel="stylesheet"
+          href="/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="list-group">
+                <%movies.forEach(function(movie){%>
+                    <li class="list-group-item">
+                        <a href="<%=movie.url%>"><%=movie.name%></a>
+                    </li>
+                <%})%>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
